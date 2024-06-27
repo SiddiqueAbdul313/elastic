@@ -1,0 +1,361 @@
+:root {
+  /* Colors */
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --background-color: #ffffff;
+  --text-color: #212529;
+  --muted-text-color: #6c757d;
+  --common-color: #f2c77c;
+  --links-color: #e7cfb1;
+
+  /* Typography */
+  --font-family: "Roboto", sans-serif;
+  --heading-font-family: "Oswald", sans-serif;
+  --base-font-size: 16px;
+  --heading-font-size: 2rem;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --line-height: 1.5;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  /* Shadows */
+  --box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --box-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.12);
+  --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  color: greenyellow;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-family);
+}
+body {
+  overflow-x: hidden;
+}
+#nav {
+  background-color: #141313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+#nav img {
+  display: none;
+}
+#nav .title {
+  font-weight: var(--font-weight-bold);
+  color: #000;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+  align-items: end;
+  text-align: right;
+  background-color: #e7cfb1;
+  padding: 7px 7px 7px 7px;
+  margin-top: 10px;
+  letter-spacing: -1px;
+}
+#nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 30px;
+  gap: 7rem;
+}
+#nav ul li a {
+  text-decoration: none;
+  color: #e7cfb1;
+  outline: none;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+}
+
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: #141313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page .text {
+  color: #333;
+}
+.letter {
+  font-size: 45vw;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -5rem;
+}
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+}
+#page2 h1 {
+  font-family: var(--font-family);
+  letter-spacing: -2px;
+}
+#page2 h1 {
+  font-size: 40vw;
+  text-transform: uppercase;
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141313;
+}
+
+#page3 .sometext {
+  display: flex;
+  flex-direction: column;
+  color: #e7cfb1;
+}
+#page3 .sometext .first {
+  display: flex;
+  font-size: 5vw;
+  align-items: center;
+  gap: 2rem;
+}
+#page3 .sometext span {
+  font-style: oblique;
+  font-size: 9vw;
+}
+#page3 .sometext .first h1 {
+  text-transform: uppercase;
+}
+#page3 .sometext .second {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 5vw;
+  align-items: center;
+  gap: 2rem;
+}
+#page3 .sometext .third {
+  display: flex;
+  font-size: 5vw;
+  align-items: center;
+  gap: 2rem;
+  justify-content: end;
+}
+#page3 .sometext .third h1 {
+  text-transform: uppercase;
+}
+#page3 .fourth {
+  display: flex;
+  align-items: center;
+}
+#page3 .fourth .last {
+  font-size: 9vw;
+  text-transform: uppercase;
+}
+#page3 .fourth p {
+  width: 350px;
+  font-size: 19px;
+  margin-left: 2rem;
+}
+#page4 {
+  width: 100%;
+  height: 100%;
+  background-color: #141313;
+  color: #f2c77c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#page4 .image-title {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2vw;
+  max-width: 500px; /* Adjust this value as needed */
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 4rem 0;
+}
+#page4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#page5 {
+  height: 50%;
+  width: 100%;
+  background-color: #08080a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page5 .tags {
+  display: flex;
+  line-height: 1.5;
+}
+#page5 .tags h3{
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin: 0 9rem;
+  color: #f2c77c;
+}
+
+#page5 .tags li {
+  list-style-type: none;
+  margin: 0 9rem;
+  font-size: 1.3vw;
+  font-weight: var(--font-weight-normal);
+  color: #e7cfb1;
+}
+
+/* media queries */
+
+@media (width<950px) {
+  #page3 .sometext .third {
+    justify-content: center;
+  }
+  #page3 .fourth {
+    align-items: center;
+    gap: 1rem;
+  }
+  #page4 .image-title{
+    letter-spacing: 1px;
+    font-size: 3vw;
+  }
+  #page5{
+    padding: 0 10px;
+  }
+  #page5 .tags{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #page5 .tags h3{
+    margin: 0;
+    font-size: 2vw;
+  }
+  #page5 .tags li{
+    margin: 0;
+    font-size: 1.5vw;
+  }
+}
+
+@media (width>768px) {
+  .letter {
+    font-size: 40vw;
+    letter-spacing: -2.5rem;
+  }
+  #page4 h2 {
+    flex: 1;
+    margin-right: var(--spacing-lg);
+  }
+
+  #page4 .image {
+    width: 50%;
+    padding: 0;
+  }
+  
+}
+@media (width<768px) {
+  #nav ul {
+    gap: 2rem;
+  }
+  #nav ul li a {
+    font-size: 1rem;
+    align-items: center;
+  }
+  .letter {
+    font-size: 40vw;
+    letter-spacing: -1.5rem;
+  }
+  #page3 .sometext div {
+    justify-content: center;
+  }
+  #page3 .sometext .third {
+    justify-content: center;
+  }
+  #page3 .fourth {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1vw;
+  }
+  #page4 .image-title {
+    font-size: 4vw;
+    letter-spacing: 1px;
+  }
+}
+@media (width<470px) {
+  #nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  #nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .letter {
+    font-size: 40vw;
+    letter-spacing: -1rem;
+  }
+  #page3 .sometext .first {
+    gap: 0.5rem;
+  }
+  #page3 .sometext .second {
+    gap: 0.5rem;
+  }
+  #page3 .sometext .third {
+    gap: 0.5rem;
+  }
+  #page3 .fourth p {
+    font-size: 2.5vw;
+    text-align: left;
+    padding: 0 20px;
+  }
+  #page3 .sometext .first {
+    gap: 0;
+  }
+  #page5 .tags{
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  #page5 .tags h3,#page5 .tags li {
+    font-size: 3vw;
+  }
+}
